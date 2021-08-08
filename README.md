@@ -7,12 +7,17 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn electron:serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+yarn electron:build
+```
+
+### Auto generate Icon
+```
+yarn build-icon 
 ```
 
 ### Lints and fixes files
