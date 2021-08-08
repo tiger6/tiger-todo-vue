@@ -1,6 +1,6 @@
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import { app, BrowserWindow, ipcMain, Tray, Menu, screen } from 'electron'
-
+import { autoUpdater } from "electron-updater"
 const path = require('path')
 const iconPath = path.join(__static, 'icon.png')//应用运行时的标题栏图标
 
@@ -29,6 +29,8 @@ app.on('ready', async () => {
     createProtocol('app')
     // Load the index.html when not in development
     mainWindow.loadURL(`file://${__dirname}/main.html`)
+    //自动检查更新
+    autoUpdater.checkForUpdatesAndNotify()
   }
   mainWindow.removeMenu() //去掉菜单栏,防止通过快捷键唤起
   setTray()

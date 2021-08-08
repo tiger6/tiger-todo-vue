@@ -24,8 +24,9 @@ module.exports = { //多页面打包
       builderOptions: {
         // options placed here will be merged with default configuration and passed to electron-builder
         "appId": "this.is.tasky",
-        "productName": "Tasky",
+        "productName": "Tiger ToDo",
         "copyright": "Copyright © 2021 Tiger",
+        "publish": ['github'], //发布到github
         "directories": {
           "buildResources": "build"
         },
