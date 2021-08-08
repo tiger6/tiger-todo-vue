@@ -1,4 +1,4 @@
-# tasky-vue
+# tiger-todo-vue
 
 ## Project setup
 ```
